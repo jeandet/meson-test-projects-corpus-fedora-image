@@ -5,7 +5,7 @@ LABEL description="This is a Fedora based container made to build meson meson-te
 RUN dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 		https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-RUN dnf clean all && update -y
+RUN dnf clean all && dnf update -y
 
 RUN dnf install -y git cmake tar gzip unzip ninja-build xonsh python3-pip python3-PyYAML time valgrind-devel libunwind-devel \ 
                    elfutils-devel pygobject3-devel gsl-devel gtk-doc libmount-devel \
