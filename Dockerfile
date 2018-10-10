@@ -19,4 +19,4 @@ RUN dnf install -y gtk3-devel vulkan-devel libnice-devel pango-devel cairo-devel
 RUN dnf install -y mesa-libGLES-devel python2-mako libXvMC-devel libomxil-bellagio-devel elfutils-libelf-devel libxshmfence-devel \
                    libvdpau-devel libdrm-devel kbd quota kexec-tools libcap-devel libmount-devel libgcrypt-devel gtk-doc \
                    libnotify-devel json-glib-devel libsoup-devel ModemManager-glib-devel avahi-devel avahi-glib-devel \
-                   mpv-libs-devel  mesa-libEGL-devel flex-devel bison-devel gcc-objc SDL2-devel mesa-vulkan-devel 
+                   mpv-libs-devel  mesa-libEGL-devel flex-devel bison-devel gcc-objc SDL2-devel mesa-vulkan-devel libxkbfile-devel
